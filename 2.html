@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación al Rosario</title>
+  <style>
+    /* Reset básico */
+    body, h1, h2, p {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Estilo general */
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-top: 5px solid #444;
+      border-left: 2px solid #777;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      color: #444;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .header::after {
+      content: '';
+      width: 60px;
+      height: 3px;
+      background: #444;
+      display: block;
+      margin: 10px auto 0;
+    }
+
+    .cross {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 40px;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/32/Christian_cross.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .content p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .highlight {
+      color: #444;
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* Decoración tipo luto */
+    .ribbon {
+      width: 100%;
+      height: 8px;
+      background: linear-gradient(90deg, #333, #777, #333);
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 20px;
+      }
+      .content p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="ribbon"></div>
+    <div class="header">
+      <div class="cross"></div>
+      <h1>Invitación al Rosario</h1>
+    </div>
+    <div class="content">
+      <p>Con profundo amor y respeto, te invitamos a acompañarnos en el <span class="highlight">rosario</span> en memoria de <span class="highlight">[Nombre de la Persona]</span>.</p>
+      <p><strong>Fecha:</strong> [Fecha del evento]</p>
+      <p><strong>Hora:</strong> [Hora del evento]</p>
+      <p><strong>Lugar:</strong> [Lugar del evento]</p>
+      <p>Tu presencia será un consuelo para nuestra familia en este momento especial de oración y recuerdo.</p>
+    </div>
+    <div class="footer">
+      <p>Con cariño, la familia [Apellido]</p>
+    </div>
+  </div>
+</body>
+</html>
